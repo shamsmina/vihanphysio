@@ -258,12 +258,211 @@ footer{background:#0b3030;color:white;padding:45px 0 18px}
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
+
+/* VIHAN DESIGN UPGRADE: richer editorial rhythm, color accents and clear navigation */
+:root{
+ --rose:#d96f78;--rose-soft:#f9e8e6;--peach:#f3d8c8;--sky:#dcebf0;
+ --sage:#dce9df;--lavender:#e9e5f2;--sun:#f3e6c8;
+ --shadow-soft:0 12px 34px rgba(16,62,61,.075);
+}
+body{background:#faf8f2}
+::selection{background:#dceee4;color:#103e3d}
+a,button{-webkit-tap-highlight-color:transparent}
+.menu-contact{background:var(--rose-soft)!important;color:#a84352!important;font-weight:800}
+.menu-contact span{font-size:9px;margin-right:5px;color:var(--rose)}
+.menu-contact:hover{background:#f5d7d6!important}
+.site-header{min-height:670px;background-image:linear-gradient(100deg,rgba(7,35,35,.91),rgba(15,66,61,.72) 58%,rgba(24,91,84,.52)),url("InShot_۲۰۲۶۱۱۰۷_۱۹۴۵۲۳۲۲۶.jpg")}
+.header-top{padding-top:25px}
+.brand-logo{box-shadow:0 8px 25px rgba(0,0,0,.14)}
+.brand-name{letter-spacing:-.5px}
+.hero{padding-top:100px}
+.hero-label{background:rgba(255,255,255,.09);backdrop-filter:blur(8px)}
+.hero h1{letter-spacing:-1px;text-wrap:balance}
+.hero p{line-height:2.25}
+.contact-teaser{display:inline-flex;align-items:center;gap:12px;margin-top:25px;padding:11px 15px;border-radius:16px;background:rgba(255,239,239,.12);border:1px solid rgba(255,205,207,.38);color:white;backdrop-filter:blur(8px);transition:.25s}
+.contact-teaser:hover{background:rgba(255,239,239,.2);transform:translateY(-2px)}
+.contact-teaser .contact-dot{color:#ff9da5;font-size:11px;text-shadow:0 0 12px rgba(255,157,165,.5)}
+.contact-teaser strong,.contact-teaser small{display:block}
+.contact-teaser strong{font-size:12px}
+.contact-teaser small{font-size:10px;color:rgba(255,255,255,.72)}
+.contact-teaser b{font-size:18px;color:#ffb3b8;margin-right:8px}
+.intro-wrap{margin-top:-66px}
+.intro-box{border-radius:25px;box-shadow:0 20px 55px rgba(16,62,61,.13)}
+.intro-item{position:relative}
+.intro-item:nth-child(2){background:#fbf7ed}
+.intro-item:nth-child(3){background:#f0f6f0}
+.intro-mark{width:44px;height:44px;border-radius:15px;font-size:21px}
+.section{position:relative}
+.section-heading{margin-bottom:48px}
+.section-heading h2{letter-spacing:-.45px}
+.section-heading p{line-height:2.2}
+.services{background:radial-gradient(circle at 8% 20%,rgba(243,216,200,.38),transparent 22%),radial-gradient(circle at 94% 75%,rgba(220,235,240,.58),transparent 24%),#faf8f2}
+.service-grid{gap:22px}
+.service-card{border-radius:25px;box-shadow:var(--shadow-soft)}
+.service-card:nth-child(2){transform:translateY(16px)}
+.service-card:nth-child(2):hover{transform:translateY(8px)}
+.service-visual{height:205px}
+.service-content{padding:24px 24px 27px}
+.service-content p{font-size:12px;line-height:2.25}
+.feature-section{background:linear-gradient(125deg,#103e3d,#1b655a 70%,#287d69)}
+.feature-image{border:7px solid rgba(255,255,255,.14);box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.feature-text p{line-height:2.25}
+.conditions{background:#fffefa}
+.condition-card{border-radius:18px;min-height:135px;transition:transform .25s,box-shadow .25s}
+.condition-card:nth-child(4n+1){background:#edf5ee}
+.condition-card:nth-child(4n+2){background:#fbefeb}
+.condition-card:nth-child(4n+3){background:#eef2f7}
+.condition-card:nth-child(4n){background:#f7f1df}
+.condition-card p{font-size:11px;line-height:2}
+.condition-icon{box-shadow:0 4px 14px rgba(16,62,61,.06)}
+.science-section{background:linear-gradient(115deg,#e9f1e8,#f4f0e5 55%,#e8eff1)}
+.science-image{box-shadow:inset 0 0 0 7px rgba(255,255,255,.24)}
+.science-content p{line-height:2.25}
+.science-point{border-radius:14px;padding:13px 14px}
+.methods{background:radial-gradient(circle at 90% 10%,rgba(233,229,242,.7),transparent 24%),#faf8f2}
+.method-card{border-radius:20px;padding:25px 24px;transition:.25s}
+.method-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-soft)}
+.method-card:nth-child(3n+1){background:#fffefa}
+.method-card:nth-child(3n+2){background:#f8f3e9}
+.method-card:nth-child(3n){background:#f0f5f0}
+.method-number{font-size:28px}
+.method-card p{line-height:2.2}
+.articles{background:#fffefa}
+.article-feature{border-radius:28px;box-shadow:0 18px 45px rgba(16,62,61,.12)}
+.article-feature-content{padding:38px}
+.article-feature-content p{line-height:2.2}
+.article-card{border-radius:21px;box-shadow:0 7px 22px rgba(16,62,61,.045)}
+.article-art{position:relative}
+.article-card:nth-child(2) .article-art{background:linear-gradient(135deg,#f9e8e6,#e7c9c0)}
+.article-card:nth-child(3) .article-art{background:linear-gradient(135deg,#e8e5f0,#b8c7d2)}
+.article-card:nth-child(4) .article-art{background:linear-gradient(135deg,#e7f0e6,#b6d0bd)}
+.article-content{padding:21px}
+.article-content h3{font-size:14px;line-height:2}
+.about{background:linear-gradient(125deg,#103e3d,#1b655a 62%,#387f6d)}
+.team-box{box-shadow:0 15px 40px rgba(0,0,0,.12);backdrop-filter:blur(8px)}
+.team-member{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.faq{background:linear-gradient(120deg,#f8f5ed,#f0f5ef)}
+.faq-item{border-radius:16px;box-shadow:0 5px 18px rgba(16,62,61,.035)}
+.faq-question{padding:17px 20px;line-height:1.9}
+.faq-item.open{border-color:rgba(40,125,105,.25);box-shadow:var(--shadow-soft)}
+.faq-answer{line-height:2.2}
+.contact-section{background:linear-gradient(115deg,#f9e8e6,#f7eee2 55%,#e9f1e8);text-align:right;padding:65px 0}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.contact-kicker{display:inline-block;color:#b64e5c;font-size:10px;font-weight:bold;letter-spacing:1.5px;margin-bottom:8px}
+.contact-copy h2{font-size:clamp(25px,4vw,36px);color:var(--deep);margin-bottom:8px}
+.contact-copy p{font-size:13px;color:var(--muted);max-width:520px;line-height:2.2}
+.contact-placeholder{display:flex;align-items:center;gap:14px;background:#fffefa;border:1px solid rgba(217,111,120,.22);border-radius:22px;padding:20px;box-shadow:0 12px 32px rgba(115,66,66,.08)}
+.contact-icon{width:48px;height:48px;flex:0 0 48px;border-radius:16px;background:var(--rose-soft);color:#b64e5c;display:grid;place-items:center;font-size:25px}
+.contact-placeholder strong,.contact-placeholder small{display:block}
+.contact-placeholder strong{font-size:15px;color:var(--deep)}
+.contact-placeholder small{font-size:11px;color:var(--muted)}
+.contact-soon{margin-right:auto;background:var(--rose-soft);color:#a84352;border-radius:30px;padding:4px 11px;font-size:10px;font-weight:bold}
+footer{background:linear-gradient(120deg,#092d2d,#103e3d 70%,#164e48)}
+.footer-column a{padding:3px 0;transition:.2s}
+.footer-column a:hover{transform:translateX(-3px);color:#ffb3b8}
+.footer-column:last-child h3{color:#ffb3b8}
+@media(max-width:850px){
+ .service-card:nth-child(2){transform:none}
+ .service-card:nth-child(2):hover{transform:translateY(-5px)}
+ .contact-layout{grid-template-columns:1fr}
+}
+/* Top contact cards and a more contemporary navigation panel */
+.quick-contact{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;
+ padding:17px 0 3px;position:relative;z-index:21;
+}
+.quick-contact-card{
+ min-width:0;display:flex;align-items:center;gap:12px;
+ padding:13px 16px;border-radius:17px;
+ color:#713d46;background:linear-gradient(120deg,#ffe9e8,#f8d9dc);
+ border:1px solid rgba(255,220,221,.9);
+ box-shadow:0 9px 25px rgba(35,12,18,.13);
+ transition:transform .22s,box-shadow .22s;
+}
+.quick-contact-card:hover{transform:translateY(-3px);box-shadow:0 13px 30px rgba(35,12,18,.2)}
+.quick-contact-card .quick-icon{
+ width:39px;height:39px;flex:0 0 39px;border-radius:13px;
+ display:grid;place-items:center;background:rgba(255,255,255,.72);
+ color:#bd5968;font-size:20px;
+}
+.quick-contact-card strong,.quick-contact-card small{display:block}
+.quick-contact-card strong{font-size:12px;line-height:1.7;color:#873f4d}
+.quick-contact-card small{font-size:10px;line-height:1.8;color:#93636a}
+.quick-contact-card b{margin-right:auto;color:#b64e5c;font-size:17px}
+.menu-panel{
+ width:min(330px,91vw);padding:13px;background:rgba(255,254,250,.97);
+ border:1px solid rgba(212,173,104,.28);border-radius:21px;
+ box-shadow:0 20px 55px rgba(4,28,27,.24);backdrop-filter:blur(14px);
+}
+.menu-panel a{
+ display:flex;align-items:center;justify-content:space-between;
+ margin:3px 0;padding:11px 14px;border-radius:12px;
+ font-size:12px;font-weight:600;color:#234b45;
+ transition:background .2s,color .2s,transform .2s;
+}
+.menu-panel a:hover{background:#eaf3ec;color:#185b54;transform:translateX(-2px)}
+.menu-panel a.menu-contact{
+ margin-top:8px;padding:12px 14px;border:1px solid #f0c5c8;
+ background:linear-gradient(110deg,#fbe5e5,#f6d5d8)!important;
+ color:#a33f50!important;box-shadow:0 5px 14px rgba(217,111,120,.12);
+}
+.menu-panel a.menu-contact:hover{background:#f4cdd1!important;color:#8e3042!important}
+.menu-button{
+ width:50px;height:48px;border-radius:15px;
+ background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.48);
+ box-shadow:0 6px 20px rgba(0,0,0,.12);backdrop-filter:blur(8px);
+}
+@media(max-width:560px){
+ .quick-contact{gap:8px;padding:12px 0 0}
+ .quick-contact-card{padding:10px 9px;gap:8px;border-radius:14px}
+ .quick-contact-card .quick-icon{width:32px;height:32px;flex-basis:32px;font-size:17px;border-radius:10px}
+ .quick-contact-card strong{font-size:10px}
+ .quick-contact-card small{font-size:8px;line-height:1.6}
+ .quick-contact-card b{font-size:13px}
+ .header-top{padding-top:14px}
+ .menu-panel{top:72px}
+}
+@media(max-width:360px){
+ .quick-contact-card{gap:6px;padding:9px 7px}
+ .quick-contact-card strong{font-size:9px}
+ .quick-contact-card small{font-size:7px}
+}
+
+@media(max-width:560px){
+ .site-header{min-height:650px}
+ .hero{padding:70px 0 115px}
+ .hero h1{font-size:clamp(34px,10vw,42px)}
+ .contact-teaser{width:100%;max-width:360px}
+ .intro-wrap{margin-top:-48px}
+ .intro-item{display:flex;align-items:center;text-align:right;gap:13px;padding:14px 18px}
+ .intro-mark{display:grid;flex:0 0 38px;width:38px;height:38px;margin:0}
+ .intro-item strong{font-size:13px}
+ .intro-item span{font-size:10px}
+ .service-card:nth-child(2){transform:none}
+ .contact-placeholder{padding:16px;gap:10px}
+ .contact-placeholder small{max-width:190px}
+ .contact-soon{font-size:9px}
+ .contact-section{padding:54px 0}
+}
+
 </style>
 </head>
 <body>
 
 <header class="site-header" id="home">
  <div class="container">
+  <div class="quick-contact" aria-label="راه‌های ارتباط با فیزیوتراپی ویهان">
+   <a class="quick-contact-card quick-phone" href="#contact">
+    <span class="quick-icon" aria-hidden="true">☎</span>
+    <span><strong>تماس با فیزیوتراپی ویهان</strong><small>شماره تماس پس از شروع فعالیت درج می‌شود</small></span>
+    <b aria-hidden="true">←</b>
+   </a>
+   <a class="quick-contact-card quick-social" href="#contact">
+    <span class="quick-icon" aria-hidden="true">◎</span>
+    <span><strong>اینستاگرام و نشانی مرکز</strong><small>اطلاعات صفحه و آدرس به‌زودی</small></span>
+    <b aria-hidden="true">←</b>
+   </a>
+  </div>
   <div class="header-top">
    <a class="brand" href="#home" aria-label="فیزیوتراپی ویهان، صفحه اصلی">
     <img class="brand-logo" src="InShot_۲۰۲۶۰۸۰۲_۱۸۲۹۰۴۹۰۴.jpg" alt="لوگوی فیزیوتراپی ویهان">
@@ -271,7 +470,7 @@ footer{background:#0b3030;color:white;padding:45px 0 18px}
    </a>
    <button class="menu-button" id="menuButton" aria-label="باز کردن منو" aria-expanded="false" aria-controls="menuPanel" type="button"><span></span><span></span><span></span></button>
    <nav class="menu-panel" id="menuPanel" aria-label="منوی اصلی">
-    <a href="#home">صفحه اصلی</a><a href="#services">خدمات فیزیوتراپی</a><a href="#conditions">مشکلات قابل بررسی</a><a href="#methods">روش‌های درمانی</a><a href="#articles">مجله علمی</a><a href="#about">درباره ما</a><a href="#faq">سؤالات متداول</a><a href="#contact">ارتباط با ما</a>
+    <a href="#home">صفحه اصلی</a><a href="#services">خدمات فیزیوتراپی</a><a href="#conditions">مشکلات قابل بررسی</a><a href="#methods">روش‌های درمانی</a><a href="#articles">مجله علمی</a><a href="#about">درباره ما</a><a href="#faq">سؤالات متداول</a><a class="menu-contact" href="#contact">تماس و نشانی <span>●</span></a>
    </nav>
   </div>
   <div class="hero">
@@ -402,7 +601,7 @@ footer{background:#0b3030;color:white;padding:45px 0 18px}
   </div>
  </section>
 
- <section class="cta" id="contact"><div class="container"><h2>تخصص در حرکت، تعهد به درمان</h2><p>اطلاعات تماس و نشانی مرکز پس از آغاز فعالیت در این بخش قرار خواهد گرفت.</p><a href="#home" class="btn btn-dark">بازگشت به ابتدای صفحه ↑</a></div></section>
+ <section class="cta contact-section" id="contact"><div class="container contact-layout"><div class="contact-copy"><span class="contact-kicker">GET IN TOUCH</span><h2>راه‌های ارتباط با ویهان</h2><p>شماره تماس، نشانی دقیق و اطلاعات مراجعه پس از نهایی‌شدن محل مرکز در این بخش قرار می‌گیرد.</p></div><div class="contact-placeholder"><span class="contact-icon">⌖</span><div><strong>خرم‌آباد</strong><small>نشانی مرکز پس از آغاز فعالیت اعلام می‌شود</small></div><span class="contact-soon">به‌زودی</span></div></div></section>
 </main>
 
 <footer><div class="container"><div class="footer-grid">
