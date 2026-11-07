@@ -1,1867 +1,1726 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="google-site-verification" content="p3xuNgMXSo7MhsjAZF3LlHKr3tBQ8A3GFi6T83j0qDM" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#123f40">
-
-    <title>فیزیوتراپی ویهان | فیزیوتراپی و توانبخشی در خرم‌آباد</title>
-
-    <meta name="description" content="فیزیوتراپی ویهان؛ مرجعی برای آشنایی با خدمات فیزیوتراپی، روش‌های درمانی، مشکلات اسکلتی عضلانی و مطالب علمی و آموزشی مرتبط با حرکت و سلامت.">
-
-    <meta name="keywords" content="فیزیوتراپی خرم‌آباد, فیزیوتراپی, توانبخشی, درمان کمردرد, دیسک کمر, گردن درد, زانو درد, درمان شانه, فیزیوتراپی ویهان">
-
-    <meta property="og:title" content="فیزیوتراپی ویهان | تخصص در حرکت، تعهد به درمان">
-    <meta property="og:description" content="آشنایی با فیزیوتراپی، روش‌های درمانی و مطالب علمی سلامت حرکت.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fa_IR">
-
-    <style>
-        :root {
-            --deep: #123f40;
-            --deep2: #1b5552;
-            --green: #4e8270;
-            --mint: #dcece4;
-            --gold: #c9aa70;
-            --gold-light: #ead9b5;
-            --cream: #f7f5ef;
-            --white: #ffffff;
-            --text: #263d3b;
-            --muted: #71817b;
-            --border: #e5e9e2;
-            --shadow: 0 15px 45px rgba(18, 63, 64, 0.09);
-            --radius: 22px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 90px;
-        }
-
-        body {
-            font-family: Tahoma, "Segoe UI", sans-serif;
-            background: var(--cream);
-            color: var(--text);
-            line-height: 2;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        button {
-            font-family: inherit;
-        }
-
-        .container {
-            width: min(1160px, 91%);
-            margin: auto;
-        }
-
-        .section {
-            padding: 90px 0;
-        }
-
-        .section-heading {
-            text-align: center;
-            max-width: 720px;
-            margin: 0 auto 48px;
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 9px;
-            color: var(--green);
-            font-size: 13px;
-            font-weight: bold;
-            letter-spacing: .3px;
-            margin-bottom: 12px;
-        }
-
-        .eyebrow::before,
-        .eyebrow::after {
-            content: "";
-            width: 23px;
-            height: 1px;
-            background: var(--gold);
-        }
-
-        .section-heading h2 {
-            color: var(--deep);
-            font-size: clamp(25px, 4vw, 36px);
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-
-        .section-heading p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .gold-line {
-            width: 65px;
-            height: 3px;
-            background: var(--gold);
-            border-radius: 10px;
-            margin: 16px auto 0;
-        }
-
-        /* HEADER */
-
-        .site-header {
-            position: relative;
-            min-height: 390px;
-            color: white;
-            background:
-                linear-gradient(115deg, rgba(12, 48, 49, .94), rgba(21, 76, 70, .78)),
-                url("InShot_۲۰۲۶۱۱۰۷_۱۹۴۵۲۳۲۲۶.jpg") center 45% / cover no-repeat;
-            overflow: visible;
-            z-index: 20;
-        }
-
-        .site-header::before {
-            content: "";
-            position: absolute;
-            width: 360px;
-            height: 360px;
-            border: 1px solid rgba(234, 217, 181, .22);
-            border-radius: 50%;
-            top: -190px;
-            left: -90px;
-            pointer-events: none;
-        }
-
-        .site-header::after {
-            content: "";
-            position: absolute;
-            width: 210px;
-            height: 210px;
-            border: 1px solid rgba(234, 217, 181, .18);
-            border-radius: 50%;
-            bottom: -120px;
-            right: -70px;
-            pointer-events: none;
-        }
-
-        .header-top {
-            position: relative;
-            z-index: 5;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 0;
-        }
-
-        .brand {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-
-        .brand-name {
-            font-size: 26px;
-            font-weight: bold;
-            color: white;
-            letter-spacing: .2px;
-        }
-
-        .brand-slogan {
-            color: var(--gold-light);
-            font-size: 12px;
-            letter-spacing: .5px;
-        }
-
-        .menu-button {
-            width: 48px;
-            height: 45px;
-            border: 1px solid rgba(255,255,255,.38);
-            border-radius: 13px;
-            background: rgba(255,255,255,.09);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-            transition: .25s;
-        }
-
-        .menu-button:hover {
-            background: rgba(255,255,255,.18);
-        }
-
-        .menu-button span {
-            width: 21px;
-            height: 2px;
-            background: white;
-            border-radius: 5px;
-            transition: .25s;
-        }
-
-        .menu-button.active span:first-child {
-            transform: translateY(8px) rotate(45deg);
-        }
-
-        .menu-button.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-button.active span:last-child {
-            transform: translateY(-8px) rotate(-45deg);
-        }
-
-        .menu-panel {
-            position: absolute;
-            z-index: 50;
-            top: 82px;
-            left: 0;
-            width: 270px;
-            padding: 12px;
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 17px;
-            box-shadow: var(--shadow);
-            display: none;
-        }
-
-        .menu-panel.open {
-            display: block;
-            animation: menuIn .2s ease;
-        }
-
-        @keyframes menuIn {
-            from {
-                opacity: 0;
-                transform: translateY(-7px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .menu-panel a {
-            display: block;
-            color: var(--deep);
-            padding: 10px 13px;
-            border-radius: 10px;
-            font-size: 13px;
-            transition: .2s;
-        }
-
-        .menu-panel a:hover {
-            background: var(--mint);
-            color: var(--deep);
-            padding-right: 19px;
-        }
-
-        /* HERO */
-
-        .hero {
-            position: relative;
-            z-index: 2;
-            padding: 43px 0 95px;
-            max-width: 780px;
-        }
-
-        .hero-label {
-            display: inline-block;
-            border: 1px solid rgba(234,217,181,.45);
-            color: var(--gold-light);
-            padding: 5px 15px;
-            border-radius: 30px;
-            font-size: 11px;
-            letter-spacing: 1.5px;
-            margin-bottom: 19px;
-        }
-
-        .hero h1 {
-            color: white;
-            font-size: clamp(31px, 5.5vw, 52px);
-            line-height: 1.65;
-            margin-bottom: 13px;
-        }
-
-        .hero h1 span {
-            color: var(--gold-light);
-        }
-
-        .hero p {
-            color: rgba(255,255,255,.83);
-            font-size: 15px;
-            max-width: 650px;
-            margin-bottom: 28px;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 9px;
-            padding: 12px 23px;
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: bold;
-            transition: .25s;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: var(--gold);
-            color: #263b35;
-        }
-
-        .btn-primary:hover {
-            background: var(--gold-light);
-            transform: translateY(-3px);
-        }
-
-        .btn-outline {
-            border: 1px solid rgba(255,255,255,.55);
-            color: white;
-            background: rgba(255,255,255,.06);
-        }
-
-        .btn-outline:hover {
-            background: rgba(255,255,255,.15);
-        }
-
-        /* INTRO STRIP */
-
-        .intro-strip {
-            position: relative;
-            z-index: 3;
-            margin-top: -40px;
-        }
-
-        .intro-box {
-            background: white;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            padding: 27px 15px;
-            border: 1px solid rgba(201,170,112,.23);
-        }
-
-        .intro-item {
-            text-align: center;
-            padding: 5px 15px;
-            border-left: 1px solid var(--border);
-        }
-
-        .intro-item:last-child {
-            border-left: none;
-        }
-
-        .intro-item strong {
-            display: block;
-            color: var(--deep);
-            font-size: 15px;
-            margin-bottom: 4px;
-        }
-
-        .intro-item span {
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        /* GENERAL CARDS */
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 27px;
-            transition: .3s;
-            height: 100%;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow);
-            border-color: rgba(201,170,112,.6);
-        }
-
-        .card-icon {
-            width: 53px;
-            height: 53px;
-            display: grid;
-            place-items: center;
-            border-radius: 16px;
-            background: var(--mint);
-            color: var(--deep);
-            font-size: 23px;
-            margin-bottom: 17px;
-        }
-
-        .card h3 {
-            color: var(--deep);
-            font-size: 17px;
-            margin-bottom: 9px;
-        }
-
-        .card p {
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 2.1;
-        }
-
-        .card-link {
-            display: inline-block;
-            margin-top: 15px;
-            color: var(--green);
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        /* SERVICES */
-
-        .services-section {
-            background:
-                radial-gradient(circle at 8% 10%, rgba(201,170,112,.12), transparent 25%),
-                var(--cream);
-        }
-
-        .service-card {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::after {
-            content: "";
-            position: absolute;
-            width: 90px;
-            height: 90px;
-            border: 1px solid rgba(78,130,112,.12);
-            border-radius: 50%;
-            left: -35px;
-            bottom: -40px;
-        }
-
-        /* CONDITIONS */
-
-        .conditions-section {
-            background: white;
-        }
-
-        .condition-search {
-            max-width: 490px;
-            margin: 0 auto 30px;
-            position: relative;
-        }
-
-        .condition-search input {
-            width: 100%;
-            padding: 15px 19px;
-            border: 1px solid var(--border);
-            border-radius: 13px;
-            outline: none;
-            background: var(--cream);
-            color: var(--text);
-            font-family: inherit;
-            font-size: 13px;
-        }
-
-        .condition-search input:focus {
-            border-color: var(--green);
-            box-shadow: 0 0 0 3px rgba(78,130,112,.1);
-        }
-
-        .condition-card {
-            padding: 19px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .condition-card .card-icon {
-            flex-shrink: 0;
-            margin: 0;
-            width: 45px;
-            height: 45px;
-            font-size: 19px;
-        }
-
-        .condition-card h3 {
-            font-size: 14px;
-            margin: 0;
-        }
-
-        .condition-card p {
-            font-size: 11px;
-            margin-top: 3px;
-        }
-
-        .no-results {
-            display: none;
-            text-align: center;
-            color: var(--muted);
-            padding: 20px;
-            font-size: 13px;
-        }
-
-        /* METHODS */
-
-        .methods-section {
-            background:
-                linear-gradient(135deg, #e8f0e9, #f7f5ef 65%);
-        }
-
-        .method-card {
-            background: rgba(255,255,255,.85);
-        }
-
-        /* ABOUT */
-
-        .about-section {
-            background: var(--deep);
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about-section::before {
-            content: "";
-            position: absolute;
-            width: 420px;
-            height: 420px;
-            border: 1px solid rgba(234,217,181,.15);
-            border-radius: 50%;
-            left: -170px;
-            top: -190px;
-        }
-
-        .about-content {
-            position: relative;
-            display: grid;
-            grid-template-columns: 1.1fr .9fr;
-            gap: 55px;
-            align-items: center;
-        }
-
-        .about-text .eyebrow {
-            color: var(--gold-light);
-        }
-
-        .about-text h2 {
-            font-size: clamp(26px, 4vw, 37px);
-            line-height: 1.7;
-            margin-bottom: 18px;
-        }
-
-        .about-text p {
-            color: rgba(255,255,255,.77);
-            font-size: 14px;
-            margin-bottom: 14px;
-        }
-
-        .about-highlight {
-            background: rgba(255,255,255,.07);
-            border: 1px solid rgba(234,217,181,.24);
-            border-radius: 23px;
-            padding: 30px;
-            backdrop-filter: blur(5px);
-        }
-
-        .about-highlight h3 {
-            color: var(--gold-light);
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .therapist {
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(255,255,255,.13);
-        }
-
-        .therapist:last-child {
-            border-bottom: none;
-        }
-
-        .therapist strong {
-            display: block;
-            font-size: 16px;
-            margin-bottom: 3px;
-        }
-
-        .therapist span {
-            color: rgba(255,255,255,.68);
-            font-size: 12px;
-        }
-
-        /* ARTICLES */
-
-        .articles-section {
-            background: var(--cream);
-        }
-
-        .article-card {
-            padding: 0;
-            overflow: hidden;
-        }
-
-        .article-top {
-            height: 125px;
-            display: grid;
-            place-items: center;
-            background:
-                linear-gradient(135deg, #174b49, #4e8270);
-            color: rgba(255,255,255,.9);
-            font-size: 37px;
-            position: relative;
-        }
-
-        .article-top::after {
-            content: "";
-            position: absolute;
-            width: 95px;
-            height: 95px;
-            border: 1px solid rgba(255,255,255,.23);
-            border-radius: 50%;
-            right: 20%;
-            top: 15px;
-        }
-
-        .article-body {
-            padding: 23px;
-        }
-
-        .article-tag {
-            display: inline-block;
-            color: var(--green);
-            background: var(--mint);
-            border-radius: 30px;
-            padding: 3px 10px;
-            font-size: 10px;
-            margin-bottom: 12px;
-        }
-
-        .article-body h3 {
-            color: var(--deep);
-            font-size: 16px;
-            line-height: 1.9;
-            margin-bottom: 10px;
-        }
-
-        .article-body p {
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        .article-note {
-            margin-top: 25px;
-            padding: 17px 20px;
-            background: #fff;
-            border-right: 3px solid var(--gold);
-            border-radius: 10px;
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        /* FAQ */
-
-        .faq-section {
-            background: white;
-        }
-
-        .faq-list {
-            max-width: 820px;
-            margin: auto;
-        }
-
-        .faq-item {
-            border: 1px solid var(--border);
-            border-radius: 13px;
-            margin-bottom: 12px;
-            overflow: hidden;
-        }
-
-        .faq-question {
-            width: 100%;
-            padding: 17px 20px;
-            background: white;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: right;
-            color: var(--deep);
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .faq-question span {
-            color: var(--gold);
-            font-size: 20px;
-            transition: .2s;
-        }
-
-        .faq-answer {
-            display: none;
-            padding: 0 20px 18px;
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 2.2;
-        }
-
-        .faq-item.open .faq-answer {
-            display: block;
-        }
-
-        .faq-item.open .faq-question span {
-            transform: rotate(45deg);
-        }
-
-        /* CTA */
-
-        .cta-section {
-            padding: 65px 0;
-            background:
-                radial-gradient(circle at 85% 15%, rgba(234,217,181,.18), transparent 25%),
-                linear-gradient(120deg, #174b49, #28685c);
-            color: white;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: clamp(23px, 4vw, 32px);
-            margin-bottom: 12px;
-        }
-
-        .cta-section p {
-            color: rgba(255,255,255,.78);
-            font-size: 13px;
-            margin-bottom: 22px;
-        }
-
-        /* FOOTER */
-
-        .site-footer {
-            background: #0d3031;
-            color: white;
-            padding: 48px 0 20px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr 1fr;
-            gap: 35px;
-            padding-bottom: 30px;
-        }
-
-        .footer-brand {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .footer-slogan {
-            color: var(--gold-light);
-            font-size: 12px;
-            margin-bottom: 15px;
-        }
-
-        .footer-text {
-            color: rgba(255,255,255,.65);
-            font-size: 12px;
-            line-height: 2.2;
-        }
-
-        .footer-column h3 {
-            color: var(--gold-light);
-            font-size: 14px;
-            margin-bottom: 14px;
-        }
-
-        .footer-column a {
-            display: block;
-            color: rgba(255,255,255,.7);
-            font-size: 12px;
-            margin-bottom: 9px;
-            transition: .2s;
-        }
-
-        .footer-column a:hover {
-            color: white;
-            padding-right: 4px;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,.13);
-            padding-top: 17px;
-            text-align: center;
-            color: rgba(255,255,255,.48);
-            font-size: 10px;
-        }
-
-        /* RESPONSIVE */
-
-        @media (max-width: 850px) {
-            .cards-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 560px) {
-            .site-header {
-                min-height: 370px;
-            }
-
-            .header-top {
-                padding: 18px 0;
-            }
-
-            .brand-name {
-                font-size: 21px;
-            }
-
-            .brand-slogan {
-                font-size: 10px;
-            }
-
-            .hero {
-                padding: 38px 0 85px;
-            }
-
-            .hero h1 {
-                font-size: 31px;
-            }
-
-            .hero p {
-                font-size: 13px;
-            }
-
-            .section {
-                padding: 65px 0;
-            }
-
-            .intro-box {
-                grid-template-columns: 1fr;
-                gap: 17px;
-                padding: 23px 15px;
-            }
-
-            .intro-item {
-                border-left: none;
-                border-bottom: 1px solid var(--border);
-                padding-bottom: 13px;
-            }
-
-            .intro-item:last-child {
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-
-            .card {
-                padding: 22px;
-            }
-
-            .condition-card {
-                padding: 16px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-
-            .menu-panel {
-                width: min(280px, 85vw);
-            }
-
-            .hero-actions .btn {
-                width: 100%;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                animation-duration: .01ms !important;
-                transition-duration: .01ms !important;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="p3xuNgMXSo7MhsjAZF3LlHKr3tBQ8A3GFi6T83j0qDM">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123f40">
+
+<title>فیزیوتراپی ویهان | فیزیوتراپی و توانبخشی در خرم‌آباد</title>
+
+<meta name="description" content="فیزیوتراپی ویهان؛ آشنایی با خدمات فیزیوتراپی، توانبخشی، مشکلات اسکلتی عضلانی، روش‌های درمانی و مقالات علمی سلامت حرکت در خرم‌آباد.">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="فیزیوتراپی ویهان | تخصص در حرکت، تعهد به درمان">
+<meta property="og:description" content="دانش علمی، حرکت بهتر و توانبخشی هدفمند.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<style>
+:root {
+    --deep: #103e3d;
+    --deep2: #185b54;
+    --jade: #287d69;
+    --green: #65a58a;
+    --mint: #d9eee3;
+    --lime: #b7d58d;
+    --gold: #d4ad68;
+    --coral: #e8a18b;
+    --cream: #f8f5ed;
+    --white: #ffffff;
+    --text: #29423d;
+    --muted: #72817a;
+    --line: #e5e9df;
+    --shadow: 0 18px 55px rgba(16,62,61,.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Tahoma, "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 2;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: min(1160px, 91%);
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading .tag {
+    display: inline-block;
+    color: var(--jade);
+    background: var(--mint);
+    padding: 5px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.section-heading h2 {
+    font-size: clamp(25px, 4vw, 37px);
+    color: var(--deep);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 23px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--deep);
+}
+
+.btn-white {
+    background: white;
+    color: var(--deep);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,.55);
+    color: white;
+}
+
+/* HEADER */
+
+.site-header {
+    min-height: 590px;
+    color: white;
+    position: relative;
+    background:
+        linear-gradient(100deg, rgba(8,39,39,.92), rgba(17,73,65,.67)),
+        url("InShot_۲۰۲۶۱۱۰۷_۱۹۴۵۲۳۲۲۶.jpg") center 45% / cover no-repeat;
+    overflow: visible;
+    z-index: 20;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50%;
+    left: -180px;
+    top: -190px;
+}
+
+.header-top {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.brand-name {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.brand-slogan {
+    display: block;
+    font-size: 12px;
+    color: var(--gold);
+}
+
+.menu-button {
+    width: 48px;
+    height: 46px;
+    border: 1px solid rgba(255,255,255,.4);
+    background: rgba(255,255,255,.1);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.menu-button span {
+    width: 21px;
+    height: 2px;
+    border-radius: 5px;
+    background: white;
+    transition: .2s;
+}
+
+.menu-button.active span:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.active span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-panel {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 270px;
+    padding: 12px;
+    background: white;
+    color: var(--deep);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.menu-panel.open {
+    display: block;
+    animation: appear .2s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-panel a {
+    display: block;
+    padding: 10px 13px;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.menu-panel a:hover {
+    background: var(--mint);
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    z-index: 2;
+    padding: 85px 0 130px;
+    max-width: 700px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: var(--gold);
+    border: 1px solid rgba(212,173,104,.6);
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 58px);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.hero h1 span {
+    color: var(--lime);
+}
+
+.hero p {
+    color: rgba(255,255,255,.83);
+    font-size: 15px;
+    max-width: 600px;
+    margin-bottom: 28px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* FLOATING INTRO */
+
+.intro-wrap {
+    position: relative;
+    z-index: 5;
+    margin-top: -65px;
+}
+
+.intro-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: white;
+    border-radius: 23px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.intro-item {
+    padding: 28px 20px;
+    text-align: center;
+    border-left: 1px solid var(--line);
+}
+
+.intro-item:last-child {
+    border-left: none;
+}
+
+.intro-item strong {
+    display: block;
+    color: var(--deep);
+    font-size: 16px;
+}
+
+.intro-item span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* SERVICES */
+
+.services {
+    background:
+        radial-gradient(circle at 90% 15%, rgba(183,213,141,.25), transparent 25%),
+        var(--cream);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 21px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(16,62,61,.06);
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
+}
+
+.service-card img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 23px;
+}
+
+.service-content h3 {
+    color: var(--deep);
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.service-content p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* VISUAL FEATURE */
+
+.feature-section {
+    background: var(--deep);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-section::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+    left: -180px;
+    bottom: -210px;
+}
+
+.feature-layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.feature-image {
+    position: relative;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    left: 18px;
+    padding: 13px 17px;
+    background: rgba(12,47,44,.83);
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.feature-text .tag {
+    color: var(--lime);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.feature-text h2 {
+    font-size: clamp(26px,4vw,39px);
+    line-height: 1.7;
+    margin: 12px 0 18px;
+}
+
+.feature-text p {
+    color: rgba(255,255,255,.75);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+/* CONDITIONS */
+
+.conditions {
+    background: white;
+}
+
+.condition-search {
+    max-width: 520px;
+    margin: 0 auto 35px;
+}
+
+.condition-search input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    border-radius: 13px;
+    outline: none;
+    font-size: 13px;
+}
+
+.condition-search input:focus {
+    border-color: var(--jade);
+}
+
+.condition-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 17px;
+}
+
+.condition-card {
+    padding: 22px 15px;
+    border-radius: 17px;
+    background: #edf5ee;
+    border: 1px solid transparent;
+    transition: .25s;
+}
+
+.condition-card:nth-child(3n+2) {
+    background: #f9eee7;
+}
+
+.condition-card:nth-child(3n) {
+    background: #f2f0df;
+}
+
+.condition-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+    box-shadow: 0 10px 30px rgba(16,62,61,.08);
+}
+
+.condition-icon {
+    font-size: 25px;
+    color: var(--jade);
+    margin-bottom: 9px;
+}
+
+.condition-card h3 {
+    color: var(--deep);
+    font-size: 14px;
+}
+
+.condition-card p {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    color: var(--muted);
+    padding: 20px;
+}
+
+/* SCIENCE */
+
+.science-section {
+    background: #e8f1e8;
+}
+
+.science-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.science-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.science-content h2 {
+    color: var(--deep);
+    font-size: 32px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.science-content p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.science-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.science-point {
+    background: white;
+    padding: 13px;
+    border-radius: 12px;
+    color: var(--deep);
+    font-size: 12px;
+}
+
+/* METHODS */
+
+.methods {
+    background: var(--cream);
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.method-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    border-bottom: 4px solid var(--green);
+    box-shadow: 0 8px 25px rgba(16,62,61,.05);
+}
+
+.method-card:nth-child(2n) {
+    border-color: var(--gold);
+}
+
+.method-number {
+    color: var(--gold);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.method-card h3 {
+    color: var(--deep);
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.method-card p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* ARTICLES */
+
+.articles {
+    background: white;
+}
+
+.article-feature {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    background: var(--deep);
+    color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.article-feature img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.article-feature-content {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-category {
+    color: var(--lime);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.article-feature-content h3 {
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.article-feature-content p {
+    color: rgba(255,255,255,.75);
+    font-size: 13px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.article-card {
+    border: 1px solid var(--line);
+    border-radius: 19px;
+    overflow: hidden;
+    background: white;
+    transition: .3s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.article-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content span {
+    color: var(--jade);
+    font-size: 11px;
+}
+
+.article-content h3 {
+    color: var(--deep);
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 7px 0;
+}
+
+.article-content p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.article-status {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 10px;
+    background: #f6f0df;
+    color: #8a6a32;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+/* ABOUT */
+
+.about {
+    background:
+        linear-gradient(120deg, rgba(16,62,61,.96), rgba(40,125,105,.91)),
+        url("InShot_۲۰۲۶۱۱۰۷_۱۹۴۵۲۳۲۲۶.jpg") center/cover;
+    color: white;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.team-box {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 22px;
+    padding: 27px;
+}
+
+.team-box h3 {
+    color: var(--lime);
+    margin-bottom: 15px;
+}
+
+.team-member {
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.team-member:last-child {
+    border: none;
+}
+
+.team-member strong {
+    display: block;
+    font-size: 16px;
+}
+
+.team-member span {
+    color: rgba(255,255,255,.7);
+    font-size: 12px;
+}
+
+/* FAQ */
+
+.faq {
+    background: var(--cream);
+}
+
+.faq-list {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 17px 20px;
+    border: none;
+    background: white;
+    text-align: right;
+    color: var(--deep);
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-question span {
+    color: var(--jade);
+    font-size: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 18px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+/* CTA */
+
+.cta {
+    padding: 75px 0;
+    background: linear-gradient(120deg,#d9eee3,#f2e5c9);
+    text-align: center;
+}
+
+.cta h2 {
+    color: var(--deep);
+    font-size: clamp(24px,4vw,35px);
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0c3030;
+    color: white;
+    padding: 48px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 30px;
+}
+
+.footer-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-slogan {
+    color: var(--gold);
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-text {
+    color: rgba(255,255,255,.65);
+    font-size: 12px;
+}
+
+.footer-column h3 {
+    color: var(--lime);
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.footer-column a {
+    display: block;
+    color: rgba(255,255,255,.7);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.15);
+    padding-top: 18px;
+    text-align: center;
+    color: rgba(255,255,255,.45);
+    font-size: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px) {
+    .service-grid,
+    .method-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .condition-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .feature-layout,
+    .science-layout,
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .article-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .article-feature img {
+        height: 280px;
+    }
+
+    .article-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:560px) {
+    .site-header {
+        min-height: 550px;
+    }
+
+    .brand-name {
+        font-size: 21px;
+    }
+
+    .hero {
+        padding: 75px 0 115px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .intro-box {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-item {
+        border-left: none;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .intro-item:last-child {
+        border: none;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .service-grid,
+    .method-grid,
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .condition-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .condition-card {
+        padding: 15px 10px;
+    }
+
+    .condition-card h3 {
+        font-size: 12px;
+    }
+
+    .condition-card p {
+        font-size: 10px;
+    }
+
+    .feature-image img,
+    .science-image img {
+        height: 260px;
+    }
+
+    .article-feature-content {
+        padding: 25px;
+    }
+
+    .article-feature-content h3 {
+        font-size: 21px;
+    }
+
+    .science-points {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header class="site-header" id="home">
+<div class="container">
 
-    <div class="container">
+    <div class="header-top">
 
-        <div class="header-top">
+        <a href="#home">
+            <div class="brand-name">فیزیوتراپی ویهان</div>
+            <div class="brand-slogan">تخصص در حرکت، تعهد به درمان</div>
+        </a>
 
-            <a href="#home" class="brand">
-                <span class="brand-name">فیزیوتراپی ویهان</span>
-                <span class="brand-slogan">تخصص در حرکت، تعهد به درمان</span>
-            </a>
+        <button class="menu-button" id="menuButton"
+            aria-label="باز کردن منو"
+            aria-expanded="false"
+            aria-controls="menuPanel"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-            <button
-                class="menu-button"
-                id="menuButton"
-                aria-label="باز کردن منو"
-                aria-expanded="false"
-                aria-controls="menuPanel"
-                type="button">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-            <nav class="menu-panel" id="menuPanel">
-
-                <a href="#home">صفحه اصلی</a>
-                <a href="#about">درباره فیزیوتراپی ویهان</a>
-                <a href="#services">خدمات فیزیوتراپی</a>
-                <a href="#conditions">بیماری‌ها و مشکلات</a>
-                <a href="#methods">روش‌های درمانی</a>
-                <a href="#articles">مقالات علمی</a>
-                <a href="#faq">سؤالات متداول</a>
-                <a href="#contact">ارتباط با ما</a>
-
-            </nav>
-
-        </div>
-
-
-        <div class="hero">
-
-            <span class="hero-label">
-                PHYSIOTHERAPY · MOVEMENT · REHABILITATION
-            </span>
-
-            <h1>
-                حرکت، <span>سلامتی</span>، زندگی
-            </h1>
-
-            <p>
-                حرکت بخشی جدایی‌ناپذیر از زندگی است.
-                در فیزیوتراپی ویهان تلاش می‌کنیم با تکیه بر دانش روز،
-                ارزیابی دقیق و رویکردهای علمی توانبخشی،
-                مسیر بهبود عملکرد و کیفیت زندگی را همراه شما باشیم.
-            </p>
-
-            <div class="hero-actions">
-
-                <a href="#services" class="btn btn-primary">
-                    آشنایی با خدمات
-                    <span>←</span>
-                </a>
-
-                <a href="#articles" class="btn btn-outline">
-                    مطالعه مطالب علمی
-                </a>
-
-            </div>
-
-        </div>
+        <nav class="menu-panel" id="menuPanel">
+            <a href="#home">صفحه اصلی</a>
+            <a href="#services">خدمات فیزیوتراپی</a>
+            <a href="#conditions">بیماری‌ها و مشکلات</a>
+            <a href="#methods">روش‌های درمانی</a>
+            <a href="#articles">مجله علمی</a>
+            <a href="#about">درباره ما</a>
+            <a href="#faq">سؤالات متداول</a>
+            <a href="#contact">ارتباط با ما</a>
+        </nav>
 
     </div>
 
+    <div class="hero">
+
+        <span class="hero-label">PHYSIOTHERAPY & REHABILITATION</span>
+
+        <h1>
+            دوباره به <span>حرکت</span> اعتماد کن
+        </h1>
+
+        <p>
+            حرکت، قدرت و کیفیت زندگی؛
+            در مسیر شناخت بهتر بدن و توانبخشی،
+            دانش علمی و ارزیابی دقیق نقطه شروع ما هستند.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#services" class="btn btn-gold">آشنایی با خدمات ←</a>
+            <a href="#articles" class="btn btn-outline">مطالعه مجله علمی</a>
+        </div>
+
+    </div>
+</div>
 </header>
 
 
 <main>
 
-    <!-- INTRO -->
+<div class="container intro-wrap">
+    <div class="intro-box">
 
-    <div class="container intro-strip">
+        <div class="intro-item">
+            <strong>ارزیابی تخصصی</strong>
+            <span>شناخت مشکل و محدودیت حرکتی</span>
+        </div>
 
-        <div class="intro-box">
+        <div class="intro-item">
+            <strong>درمان هدفمند</strong>
+            <span>انتخاب مداخله متناسب با شرایط فرد</span>
+        </div>
 
-            <div class="intro-item">
-                <strong>ارزیابی تخصصی</strong>
-                <span>شناخت دقیق مشکل و محدودیت حرکتی</span>
+        <div class="intro-item">
+            <strong>توانبخشی فعال</strong>
+            <span>تمرکز بر عملکرد و حرکت بهتر</span>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+
+<div class="container">
+
+    <div class="section-heading">
+        <span class="tag">OUR SERVICES</span>
+        <h2>خدمات فیزیوتراپی</h2>
+        <p>
+            فیزیوتراپی با توجه به شرایط هر فرد می‌تواند
+            از ترکیب روش‌های مختلف درمانی و تمرین‌های هدفمند استفاده کند.
+        </p>
+    </div>
+
+    <div class="service-grid">
+
+        <article class="service-card">
+            <img loading="lazy"
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+            alt="محیط درمانی و خدمات سلامت">
+            <div class="service-content">
+                <h3>درمان‌های دستی</h3>
+                <p>تکنیک‌های دستی انتخاب‌شده برای بهبود تحرک، عملکرد و مدیریت درد.</p>
             </div>
+        </article>
 
-            <div class="intro-item">
-                <strong>درمان هدفمند</strong>
-                <span>انتخاب روش درمان متناسب با شرایط فرد</span>
+        <article class="service-card">
+            <img loading="lazy"
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=85"
+            alt="تمرین و فعالیت بدنی">
+            <div class="service-content">
+                <h3>تمرین‌درمانی</h3>
+                <p>تمرین‌های اختصاصی برای افزایش قدرت، تعادل و ظرفیت عملکردی.</p>
             </div>
+        </article>
 
-            <div class="intro-item">
-                <strong>توانبخشی فعال</strong>
-                <span>تمرکز بر عملکرد و بازگشت به فعالیت</span>
+        <article class="service-card">
+            <img loading="lazy"
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=85"
+            alt="تمرین حرکتی و انعطاف‌پذیری">
+            <div class="service-content">
+                <h3>بازآموزی حرکتی</h3>
+                <p>بهبود کنترل حرکتی و بازگشت تدریجی به فعالیت‌های روزمره.</p>
             </div>
+        </article>
 
+    </div>
+
+</div>
+</section>
+
+
+<!-- FEATURE -->
+
+<section class="section feature-section">
+
+<div class="container feature-layout">
+
+    <div class="feature-image">
+        <img loading="lazy"
+        src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1000&q=85"
+        alt="تمرین و توانبخشی حرکتی">
+        <div class="image-caption">
+            توانبخشی فقط کاهش درد نیست؛ بازگشت به عملکرد است.
+        </div>
+    </div>
+
+    <div class="feature-text">
+        <span class="tag">MOVEMENT MATTERS</span>
+        <h2>بدن برای حرکت ساخته شده است.</h2>
+        <p>
+            درد، محدودیت حرکتی و کاهش توانایی انجام فعالیت‌ها
+            می‌توانند بر کیفیت زندگی اثر بگذارند.
+            هدف توانبخشی، شناخت عوامل مؤثر و کمک به بازیابی عملکرد
+            با برنامه‌ای متناسب با شرایط هر فرد است.
+        </p>
+        <a href="#methods" class="btn btn-gold">آشنایی با روش‌های درمانی ←</a>
+    </div>
+
+</div>
+</section>
+
+
+<!-- CONDITIONS -->
+
+<section class="section conditions" id="conditions">
+
+<div class="container">
+
+    <div class="section-heading">
+        <span class="tag">CONDITIONS</span>
+        <h2>با کدام مشکلات می‌توان به فیزیوتراپی مراجعه کرد؟</h2>
+        <p>
+            هر درد یا محدودیت حرکتی علت‌های متفاوتی دارد.
+            ارزیابی دقیق، پایه انتخاب مسیر درمان است.
+        </p>
+    </div>
+
+    <div class="condition-search">
+        <input type="search" id="conditionSearch"
+        placeholder="نام مشکل را جست‌وجو کن..."
+        aria-label="جست‌وجو در مشکلات">
+    </div>
+
+    <div class="condition-grid" id="conditionGrid">
+
+        <article class="condition-card" data-search="کمردرد درد کمر">
+            <div class="condition-icon">↔</div>
+            <h3>کمردرد</h3>
+            <p>بررسی درد و محدودیت‌های ناحیه کمر.</p>
+        </article>
+
+        <article class="condition-card" data-search="گردن درد">
+            <div class="condition-icon">◉</div>
+            <h3>گردن‌درد</h3>
+            <p>بررسی درد، خشکی و اختلال حرکتی گردن.</p>
+        </article>
+
+        <article class="condition-card" data-search="دیسک کمر سیاتیک">
+            <div class="condition-icon">⌁</div>
+            <h3>دیسک کمر و سیاتیک</h3>
+            <p>ارزیابی دردهای انتشاری و علائم عصبی.</p>
+        </article>
+
+        <article class="condition-card" data-search="زانو درد آرتروز">
+            <div class="condition-icon">◎</div>
+            <h3>درد زانو</h3>
+            <p>بررسی مشکلات مفصلی و عملکردی زانو.</p>
+        </article>
+
+        <article class="condition-card" data-search="شانه درد">
+            <div class="condition-icon">◇</div>
+            <h3>درد شانه</h3>
+            <p>ارزیابی محدودیت و اختلالات حرکتی شانه.</p>
+        </article>
+
+        <article class="condition-card" data-search="شانه یخ زده">
+            <div class="condition-icon">✧</div>
+            <h3>شانه یخ‌زده</h3>
+            <p>بررسی کاهش تحرک مفصل شانه.</p>
+        </article>
+
+        <article class="condition-card" data-search="آسیب ورزشی رباط">
+            <div class="condition-icon">⚑</div>
+            <h3>آسیب‌های ورزشی</h3>
+            <p>توانبخشی آسیب‌های عضلانی و رباطی.</p>
+        </article>
+
+        <article class="condition-card" data-search="تونل کارپال مچ دست">
+            <div class="condition-icon">⌘</div>
+            <h3>تونل کارپال</h3>
+            <p>بررسی گزگز و بی‌حسی دست.</p>
+        </article>
+
+        <article class="condition-card" data-search="خار پاشنه کف پا">
+            <div class="condition-icon">⌇</div>
+            <h3>درد کف پا</h3>
+            <p>بررسی درد پاشنه و اختلالات کف پا.</p>
+        </article>
+
+        <article class="condition-card" data-search="تاندون تاندینوپاتی">
+            <div class="condition-icon">⌖</div>
+            <h3>تاندینوپاتی‌ها</h3>
+            <p>بررسی درد و اختلال عملکرد تاندون‌ها.</p>
+        </article>
+
+        <article class="condition-card" data-search="تعادل راه رفتن">
+            <div class="condition-icon">↝</div>
+            <h3>اختلال تعادل</h3>
+            <p>بررسی تعادل و الگوی راه‌رفتن.</p>
+        </article>
+
+        <article class="condition-card" data-search="توانبخشی جراحی">
+            <div class="condition-icon">✚</div>
+            <h3>توانبخشی پس از جراحی</h3>
+            <p>بازگشت تدریجی به عملکرد پس از جراحی.</p>
+        </article>
+
+    </div>
+
+    <p class="no-results" id="noResults">موردی پیدا نشد.</p>
+
+</div>
+</section>
+
+
+<!-- SCIENCE -->
+
+<section class="section science-section">
+
+<div class="container science-layout">
+
+    <div class="science-image">
+        <img loading="lazy"
+        src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1000&q=85"
+        alt="آموزش و بررسی علمی بدن انسان">
+    </div>
+
+    <div class="science-content">
+        <span class="tag">SCIENCE BASED</span>
+        <h2>دانستن درباره بدن، بخشی از مسیر درمان است.</h2>
+
+        <p>
+            در این بخش تلاش می‌کنیم مفاهیم پیچیده پزشکی و فیزیوتراپی
+            را به زبانی روشن، دقیق و قابل‌فهم توضیح دهیم.
+        </p>
+
+        <p>
+            از آناتومی و فیزیولوژی گرفته تا سازوکار درد،
+            آسیب‌های اسکلتی‌عضلانی و شواهد علمی روش‌های درمانی.
+        </p>
+
+        <div class="science-points">
+            <div class="science-point">✓ آناتومی و بیومکانیک</div>
+            <div class="science-point">✓ فیزیولوژی درد</div>
+            <div class="science-point">✓ ارزیابی و تشخیص</div>
+            <div class="science-point">✓ درمان مبتنی بر شواهد</div>
         </div>
 
     </div>
 
+</div>
+</section>
 
-    <!-- SERVICES -->
 
-    <section class="section services-section" id="services">
+<!-- METHODS -->
 
-        <div class="container">
+<section class="section methods" id="methods">
 
-            <div class="section-heading">
+<div class="container">
 
-                <span class="eyebrow">OUR SERVICES</span>
+    <div class="section-heading">
+        <span class="tag">TREATMENT METHODS</span>
+        <h2>روش‌های درمانی فیزیوتراپی</h2>
+        <p>هر روش کاربرد و محدودیت خاص خود را دارد و باید متناسب با شرایط فرد انتخاب شود.</p>
+    </div>
 
-                <h2>خدمات فیزیوتراپی</h2>
+    <div class="method-grid">
 
-                <p>
-                    فیزیوتراپی مجموعه‌ای از مداخلات تخصصی است
-                    که با هدف کاهش محدودیت‌های عملکردی،
-                    بهبود حرکت و افزایش توانایی انجام فعالیت‌های روزمره
-                    به کار گرفته می‌شود.
-                </p>
+        <article class="method-card">
+            <div class="method-number">01</div>
+            <h3>تمرین‌درمانی</h3>
+            <p>تمرین‌های قدرتی، استقامتی، تعادلی و کنترل حرکتی.</p>
+        </article>
 
-                <div class="gold-line"></div>
+        <article class="method-card">
+            <div class="method-number">02</div>
+            <h3>درمان دستی</h3>
+            <p>تکنیک‌های دستی برای اهداف مشخص درمانی و عملکردی.</p>
+        </article>
 
-            </div>
+        <article class="method-card">
+            <div class="method-number">03</div>
+            <h3>الکتروتراپی</h3>
+            <p>روش‌هایی مانند TENS و تحریک الکتریکی عضلات.</p>
+        </article>
 
+        <article class="method-card">
+            <div class="method-number">04</div>
+            <h3>درای نیدلینگ</h3>
+            <p>استفاده از سوزن‌های ظریف در شرایط و اندیکاسیون‌های منتخب.</p>
+        </article>
 
-            <div class="cards-grid">
+        <article class="method-card">
+            <div class="method-number">05</div>
+            <h3>لیزر درمانی</h3>
+            <p>استفاده از لیزر درمانی با توجه به نوع مشکل و شواهد موجود.</p>
+        </article>
 
-                <article class="card service-card">
+        <article class="method-card">
+            <div class="method-number">06</div>
+            <h3>آموزش و خودمدیریتی</h3>
+            <p>افزایش آگاهی و مشارکت فرد در مدیریت وضعیت خود.</p>
+        </article>
 
-                    <div class="card-icon">✧</div>
+    </div>
 
-                    <h3>درمان‌های دستی</h3>
+</div>
+</section>
 
-                    <p>
-                        استفاده هدفمند از تکنیک‌های دستی برای کمک به
-                        بهبود تحرک مفاصل، عملکرد بافت‌ها و مدیریت درد،
-                        متناسب با ارزیابی و شرایط هر فرد.
-                    </p>
 
-                </article>
+<!-- ARTICLES -->
 
+<section class="section articles" id="articles">
 
-                <article class="card service-card">
+<div class="container">
 
-                    <div class="card-icon">⌁</div>
+    <div class="section-heading">
+        <span class="tag">VIHAN SCIENTIFIC MAGAZINE</span>
+        <h2>مجله علمی ویهان</h2>
+        <p>
+            از درد و آسیب تا حرکت و توانبخشی؛
+            مطالب علمی برای شناخت بهتر بدن.
+        </p>
+    </div>
 
-                    <h3>الکتروتراپی</h3>
 
-                    <p>
-                        به‌کارگیری جریان‌های الکتریکی درمانی
-                        برای اهدافی مانند تعدیل درد یا تحریک عضلانی،
-                        بر اساس نوع مشکل و اندیکاسیون درمانی.
-                    </p>
+    <article class="article-feature">
 
-                </article>
+        <img loading="lazy"
+        src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=85"
+        alt="تصویر پزشکی برای مقاله علمی">
 
+        <div class="article-feature-content">
+            <span class="article-category">ستون فقرات | مقاله ویژه</span>
 
-                <article class="card service-card">
-
-                    <div class="card-icon">◎</div>
-
-                    <h3>تمرین‌درمانی</h3>
-
-                    <p>
-                        طراحی تمرین‌های اختصاصی برای بهبود قدرت،
-                        استقامت، انعطاف‌پذیری، کنترل حرکتی
-                        و توانایی انجام فعالیت‌های روزمره.
-                    </p>
-
-                </article>
-
-
-                <article class="card service-card">
-
-                    <div class="card-icon">✳</div>
-
-                    <h3>درای نیدلینگ</h3>
-
-                    <p>
-                        روشی مبتنی بر استفاده از سوزن‌های ظریف
-                        در نقاط و بافت‌های هدف؛ انتخاب آن به ارزیابی،
-                        شرایط بیمار و شواهد مرتبط بستگی دارد.
-                    </p>
-
-                </article>
-
-
-                <article class="card service-card">
-
-                    <div class="card-icon">⌖</div>
-
-                    <h3>توانبخشی اسکلتی‌عضلانی</h3>
-
-                    <p>
-                        برنامه‌ریزی درمانی برای مشکلات عضلات،
-                        مفاصل، تاندون‌ها و ستون فقرات
-                        با تمرکز بر بازیابی عملکرد.
-                    </p>
-
-                </article>
-
-
-                <article class="card service-card">
-
-                    <div class="card-icon">◇</div>
-
-                    <h3>طب سوزنی</h3>
-
-                    <p>
-                        استفاده از سوزن‌های مخصوص در نقاط مشخص بدن،
-                        در موارد منتخب و به‌عنوان بخشی از برنامه
-                        درمانی متناسب با شرایط فرد.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONDITIONS -->
-
-    <section class="section conditions-section" id="conditions">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <span class="eyebrow">CONDITIONS</span>
-
-                <h2>چه مشکلاتی در فیزیوتراپی بررسی می‌شوند؟</h2>
-
-                <p>
-                    مشکلات حرکتی و اسکلتی‌عضلانی می‌توانند
-                    علت‌ها و الگوهای متفاوتی داشته باشند.
-                    تشخیص و انتخاب درمان به ارزیابی تخصصی نیاز دارد.
-                </p>
-
-                <div class="gold-line"></div>
-
-            </div>
-
-
-            <div class="condition-search">
-
-                <input
-                    type="search"
-                    id="conditionSearch"
-                    placeholder="جست‌وجوی مشکل موردنظر..."
-                    aria-label="جست‌وجو در مشکلات">
-
-            </div>
-
-
-            <div class="cards-grid" id="conditionsGrid">
-
-                <article class="card condition-card" data-search="کمردرد درد کمر">
-                    <div class="card-icon">↔</div>
-                    <div>
-                        <h3>کمردرد</h3>
-                        <p>بررسی عوامل مؤثر بر درد و محدودیت حرکتی ناحیه کمر.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="گردن درد دیسک گردن">
-                    <div class="card-icon">◉</div>
-                    <div>
-                        <h3>گردن‌درد و مشکلات گردنی</h3>
-                        <p>بررسی درد گردن، محدودیت حرکتی و علائم همراه.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="دیسک کمر سیاتیک">
-                    <div class="card-icon">⌁</div>
-                    <div>
-                        <h3>دیسک کمر و درد سیاتیکی</h3>
-                        <p>ارزیابی دردهای انتشاری و علائم مرتبط با اعصاب.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="زانو درد آرتروز زانو">
-                    <div class="card-icon">◎</div>
-                    <div>
-                        <h3>درد زانو</h3>
-                        <p>بررسی مشکلات مفصلی، تاندونی و عملکردی زانو.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="شانه درد روتاتور کاف">
-                    <div class="card-icon">◇</div>
-                    <div>
-                        <h3>درد شانه</h3>
-                        <p>بررسی اختلالات حرکتی و مشکلات ساختارهای شانه.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="شانه یخ زده کپسولیت">
-                    <div class="card-icon">✧</div>
-                    <div>
-                        <h3>شانه یخ‌زده</h3>
-                        <p>محدودیت حرکتی شانه و اختلالات مرتبط با کپسول مفصل.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="آسیب ورزشی رباط عضله">
-                    <div class="card-icon">⚑</div>
-                    <div>
-                        <h3>آسیب‌های ورزشی</h3>
-                        <p>توانبخشی آسیب‌های عضلانی، رباطی و تاندونی.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="سندرم تونل کارپال مچ دست">
-                    <div class="card-icon">⌘</div>
-                    <div>
-                        <h3>سندرم تونل کارپال</h3>
-                        <p>بررسی بی‌حسی، گزگز و علائم مرتبط با عصب مدیان.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="خار پاشنه فاشیای کف پا">
-                    <div class="card-icon">⌇</div>
-                    <div>
-                        <h3>درد کف پا و پاشنه</h3>
-                        <p>بررسی علل درد کف پا و اختلالات عملکردی آن.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="تاندونیت تاندینوپاتی">
-                    <div class="card-icon">⌖</div>
-                    <div>
-                        <h3>تاندینوپاتی‌ها</h3>
-                        <p>ارزیابی درد و اختلال عملکرد تاندون‌ها.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="اختلال تعادل راه رفتن">
-                    <div class="card-icon">↝</div>
-                    <div>
-                        <h3>اختلال تعادل و راه‌رفتن</h3>
-                        <p>بررسی کنترل تعادل و الگوی حرکتی.</p>
-                    </div>
-                </article>
-
-
-                <article class="card condition-card" data-search="توانبخشی جراحی تعویض مفصل">
-                    <div class="card-icon">✚</div>
-                    <div>
-                        <h3>توانبخشی پس از جراحی</h3>
-                        <p>بازگشت تدریجی به عملکرد پس از جراحی‌های منتخب.</p>
-                    </div>
-                </article>
-
-            </div>
-
-            <p class="no-results" id="noResults">
-                موردی با این عبارت پیدا نشد.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- METHODS -->
-
-    <section class="section methods-section" id="methods">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <span class="eyebrow">TREATMENT APPROACHES</span>
-
-                <h2>روش‌های درمانی در فیزیوتراپی</h2>
-
-                <p>
-                    هر روش درمانی کاربرد، محدودیت و شواهد اختصاصی خود را دارد.
-                    انتخاب روش مناسب باید بر اساس ارزیابی و هدف درمان انجام شود.
-                </p>
-
-                <div class="gold-line"></div>
-
-            </div>
-
-
-            <div class="cards-grid">
-
-                <article class="card method-card">
-                    <div class="card-icon">01</div>
-                    <h3>تمرین‌درمانی و کنترل حرکتی</h3>
-                    <p>
-                        تمرین‌های قدرتی، استقامتی، تعادلی و کنترل حرکتی
-                        برای ارتقای ظرفیت عملکردی و سازگاری بدن.
-                    </p>
-                </article>
-
-
-                <article class="card method-card">
-                    <div class="card-icon">02</div>
-                    <h3>درمان دستی</h3>
-                    <p>
-                        تکنیک‌های دستی انتخاب‌شده با توجه به معاینه،
-                        هدف درمان و پاسخ فرد به مداخله.
-                    </p>
-                </article>
-
-
-                <article class="card method-card">
-                    <div class="card-icon">03</div>
-                    <h3>تحریک الکتریکی عصب و عضله</h3>
-                    <p>
-                        روش‌هایی مانند TENS و NMES که با اهداف مشخص
-                        و در شرایط مناسب مورد استفاده قرار می‌گیرند.
-                    </p>
-                </article>
-
-
-                <article class="card method-card">
-                    <div class="card-icon">04</div>
-                    <h3>لیزر درمانی</h3>
-                    <p>
-                        استفاده از نور لیزر در شرایط منتخب؛
-                        اثربخشی آن به نوع مشکل، پارامترها و کیفیت شواهد بستگی دارد.
-                    </p>
-                </article>
-
-
-                <article class="card method-card">
-                    <div class="card-icon">05</div>
-                    <h3>آموزش و خودمدیریتی</h3>
-                    <p>
-                        کمک به شناخت بهتر مشکل، مدیریت فعالیت‌ها
-                        و مشارکت آگاهانه فرد در روند توانبخشی.
-                    </p>
-                </article>
-
-
-                <article class="card method-card">
-                    <div class="card-icon">06</div>
-                    <h3>بازآموزی عملکردی</h3>
-                    <p>
-                        تمرین فعالیت‌های هدفمند برای بهبود توانایی
-                        انجام کارهای روزمره، شغلی و ورزشی.
-                    </p>
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section class="section about-section" id="about">
-
-        <div class="container">
-
-            <div class="about-content">
-
-                <div class="about-text">
-
-                    <span class="eyebrow">ABOUT VIHAN</span>
-
-                    <h2>
-                        درباره فیزیوتراپی ویهان
-                    </h2>
-
-                    <p>
-                        فیزیوتراپی ویهان با رویکردی مبتنی بر دانش
-                        و اصول علمی توانبخشی شکل گرفته است.
-                        هدف ما ارائه اطلاعات معتبر درباره سلامت حرکت
-                        و کمک به درک بهتر مشکلات اسکلتی‌عضلانی است.
-                    </p>
-
-                    <p>
-                        در نگاه ما، درمان تنها به کاهش درد محدود نمی‌شود.
-                        بررسی عملکرد، شناسایی عوامل مؤثر،
-                        انتخاب مداخلات متناسب و مشارکت فعال فرد
-                        در مسیر توانبخشی اهمیت اساسی دارد.
-                    </p>
-
-                    <p>
-                        محتوای آموزشی این وب‌سایت با هدف افزایش آگاهی
-                        تهیه می‌شود و جایگزین معاینه و ارزیابی فردی نیست.
-                    </p>
-
-                </div>
-
-
-                <div class="about-highlight">
-
-                    <h3>تیم فیزیوتراپی ویهان</h3>
-
-                    <div class="therapist">
-                        <strong>مینا شمس</strong>
-                        <span>فیزیوتراپیست</span>
-                    </div>
-
-                    <div class="therapist">
-                        <strong>مصطفی رضایی</strong>
-                        <span>فیزیوتراپیست</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ARTICLES -->
-
-    <section class="section articles-section" id="articles">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <span class="eyebrow">SCIENTIFIC MAGAZINE</span>
-
-                <h2>مجله علمی فیزیوتراپی</h2>
-
-                <p>
-                    مطالب آموزشی درباره درد، حرکت، آسیب‌های اسکلتی‌عضلانی
-                    و روش‌های نوین توانبخشی؛ با تکیه بر منابع علمی معتبر.
-                </p>
-
-                <div class="gold-line"></div>
-
-            </div>
-
-
-            <div class="cards-grid">
-
-                <article class="card article-card">
-
-                    <div class="article-top">⌁</div>
-
-                    <div class="article-body">
-
-                        <span class="article-tag">ستون فقرات</span>
-
-                        <h3>
-                            آیا مشاهده دیسک در MRI به معنی علت قطعی کمردرد است؟
-                        </h3>
-
-                        <p>
-                            چرا یافته‌های تصویربرداری باید در کنار علائم،
-                            معاینه و وضعیت عملکردی فرد تفسیر شوند؟
-                        </p>
-
-                        <span class="card-link">مقاله در حال آماده‌سازی</span>
-
-                    </div>
-
-                </article>
-
-
-                <article class="card article-card">
-
-                    <div class="article-top">◎</div>
-
-                    <div class="article-body">
-
-                        <span class="article-tag">زانو</span>
-
-                        <h3>
-                            چرا هنگام پایین آمدن از پله زانو درد می‌گیرد؟
-                        </h3>
-
-                        <p>
-                            آشنایی با مفصل پاتلوفمورال،
-                            بارگذاری زانو و عوامل مؤثر بر درد.
-                        </p>
-
-                        <span class="card-link">مقاله در حال آماده‌سازی</span>
-
-                    </div>
-
-                </article>
-
-
-                <article class="card article-card">
-
-                    <div class="article-top">◇</div>
-
-                    <div class="article-body">
-
-                        <span class="article-tag">گردن و شانه</span>
-
-                        <h3>
-                            ارتباط وضعیت سر به جلو با درد گردن چیست؟
-                        </h3>
-
-                        <p>
-                            بررسی رابطه وضعیت بدن، بار مکانیکی،
-                            فعالیت عضلات و تجربه درد.
-                        </p>
-
-                        <span class="card-link">مقاله در حال آماده‌سازی</span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-            <div class="article-note">
-                مقالات این بخش به‌تدریج با محتوای کامل،
-                منابع علمی و تاریخ به‌روزرسانی منتشر خواهند شد.
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FAQ -->
-
-    <section class="section faq-section" id="faq">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <span class="eyebrow">FAQ</span>
-
-                <h2>سؤالات متداول درباره فیزیوتراپی</h2>
-
-                <p>
-                    پاسخ به برخی پرسش‌های رایج درباره ارزیابی،
-                    درمان و روند توانبخشی.
-                </p>
-
-                <div class="gold-line"></div>
-
-            </div>
-
-
-            <div class="faq-list">
-
-                <div class="faq-item">
-
-                    <button class="faq-question" type="button">
-                        آیا برای شروع فیزیوتراپی همیشه به MRI نیاز است؟
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        خیر. در بسیاری از مشکلات اسکلتی‌عضلانی،
-                        شرح حال و معاینه بالینی نقش اصلی در ارزیابی دارند.
-                        تصویربرداری زمانی درخواست می‌شود که بر اساس شرایط فرد
-                        و یافته‌های معاینه، ضرورت داشته باشد.
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" type="button">
-                        آیا درد هنگام تمرین همیشه نشانه آسیب است؟
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        خیر. تجربه درد به‌تنهایی معادل آسیب بافتی نیست.
-                        با این حال، نوع درد، شدت، روند تغییر آن و علائم همراه
-                        باید بررسی شوند تا میزان مناسب فعالیت مشخص شود.
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" type="button">
-                        تعداد جلسات فیزیوتراپی چگونه تعیین می‌شود؟
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        تعداد جلسات به نوع مشکل، شدت محدودیت،
-                        اهداف درمانی، پاسخ فرد به مداخلات و روند پیشرفت بستگی دارد.
-                        تعداد ثابتی برای همه افراد وجود ندارد.
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" type="button">
-                        آیا تمرین‌درمانی بخش مهمی از فیزیوتراپی است؟
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        در بسیاری از مشکلات اسکلتی‌عضلانی،
-                        تمرین‌درمانی بخش مهمی از برنامه توانبخشی است.
-                        نوع و مقدار تمرین باید متناسب با شرایط و ظرفیت فرد تنظیم شود.
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question" type="button">
-                        آیا فیزیوتراپی فقط برای کاهش درد انجام می‌شود؟
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        خیر. اهداف فیزیوتراپی می‌توانند شامل بهبود قدرت،
-                        تعادل، تحرک، کنترل حرکتی، تحمل فعالیت و استقلال عملکردی
-                        نیز باشند.
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section class="cta-section" id="contact">
-
-        <div class="container">
-
-            <h2>حرکت بهتر، شروع یک مسیر تازه است.</h2>
+            <h3>آیا هر دیسکی که در MRI دیده می‌شود، عامل کمردرد است؟</h3>
 
             <p>
-                اطلاعات تماس و نشانی مرکز پس از آغاز فعالیت
-                در همین بخش قرار خواهد گرفت.
+                یافته‌های تصویربرداری همیشه با شدت درد و علائم فرد
+                مطابقت ندارند. برای درک بهتر کمردرد باید تصویر،
+                معاینه و وضعیت عملکردی را در کنار یکدیگر بررسی کرد.
             </p>
 
-            <a href="#home" class="btn btn-primary">
-                بازگشت به ابتدای صفحه ↑
-            </a>
-
+            <span class="article-status">مقاله در حال آماده‌سازی</span>
         </div>
 
-    </section>
+    </article>
+
+
+    <div class="article-grid">
+
+        <article class="article-card">
+            <img loading="lazy"
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=85"
+            alt="تمرین حرکتی">
+            <div class="article-content">
+                <span>زانو و اندام تحتانی</span>
+                <h3>چرا هنگام پایین آمدن از پله زانو درد می‌گیرد؟</h3>
+                <p>نگاهی به مفصل پاتلوفمورال و عوامل مؤثر بر درد زانو.</p>
+                <span class="article-status">به‌زودی</span>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img loading="lazy"
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=85"
+            alt="تمرین و وضعیت بدن">
+            <div class="article-content">
+                <span>گردن و شانه</span>
+                <h3>وضعیت سر به جلو چه ارتباطی با گردن‌درد دارد؟</h3>
+                <p>بررسی رابطه وضعیت بدن، بار مکانیکی و تجربه درد.</p>
+                <span class="article-status">به‌زودی</span>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img loading="lazy"
+            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=85"
+            alt="تمرین ورزشی و توانبخشی">
+            <div class="article-content">
+                <span>تمرین و توانبخشی</span>
+                <h3>آیا درد هنگام تمرین همیشه نشانه آسیب است؟</h3>
+                <p>شناخت تفاوت درد، حساسیت و آسیب بافتی.</p>
+                <span class="article-status">به‌زودی</span>
+            </div>
+        </article>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+<div class="container about-layout">
+
+    <div>
+        <span class="tag">ABOUT VIHAN</span>
+
+        <h2>فیزیوتراپی ویهان</h2>
+
+        <p>
+            ویهان با هدف ارائه خدمات و اطلاعات تخصصی در زمینه
+            فیزیوتراپی و سلامت حرکت شکل گرفته است.
+        </p>
+
+        <p>
+            رویکرد ما بر ارزیابی دقیق، انتخاب مداخلات متناسب،
+            آموزش و توانبخشی فعال استوار است.
+        </p>
+
+        <p>
+            تلاش می‌کنیم محتوای این وب‌سایت بر پایه منابع علمی معتبر
+            و با زبانی قابل‌فهم برای عموم تهیه شود.
+        </p>
+    </div>
+
+    <div class="team-box">
+        <h3>تیم فیزیوتراپی ویهان</h3>
+
+        <div class="team-member">
+            <strong>مینا شمس</strong>
+            <span>فیزیوتراپیست</span>
+        </div>
+
+        <div class="team-member">
+            <strong>مصطفی رضایی</strong>
+            <span>فیزیوتراپیست</span>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- FAQ -->
+
+<section class="section faq" id="faq">
+
+<div class="container">
+
+    <div class="section-heading">
+        <span class="tag">FAQ</span>
+        <h2>پرسش‌های متداول</h2>
+        <p>پاسخ به پرسش‌های رایج درباره فیزیوتراپی و توانبخشی.</p>
+    </div>
+
+    <div class="faq-list">
+
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                آیا برای شروع فیزیوتراپی همیشه MRI لازم است؟
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                خیر. در بسیاری از مشکلات اسکلتی‌عضلانی،
+                شرح حال و معاینه بالینی نقش اصلی دارند.
+                تصویربرداری در صورت نیاز و بر اساس شرایط فرد درخواست می‌شود.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                آیا درد هنگام تمرین همیشه نشانه آسیب است؟
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                خیر. درد به‌تنهایی معادل آسیب بافتی نیست.
+                نوع، شدت، روند تغییر درد و علائم همراه باید بررسی شوند.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                تعداد جلسات فیزیوتراپی چگونه مشخص می‌شود؟
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                تعداد جلسات به نوع مشکل، اهداف درمانی،
+                وضعیت فرد و میزان پیشرفت او بستگی دارد.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                آیا فیزیوتراپی فقط برای کاهش درد است؟
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                خیر. بهبود قدرت، تعادل، تحرک، کنترل حرکتی
+                و توانایی انجام فعالیت‌های روزمره نیز از اهداف فیزیوتراپی هستند.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="cta" id="contact">
+<div class="container">
+
+    <h2>تخصص در حرکت، تعهد به درمان</h2>
+
+    <p>
+        اطلاعات تماس و نشانی مرکز پس از آغاز فعالیت در این بخش قرار خواهد گرفت.
+    </p>
+
+    <a href="#home" class="btn btn-gold">بازگشت به ابتدای صفحه ↑</a>
+
+</div>
+</section>
 
 </main>
 
 
-<!-- FOOTER -->
+<footer>
 
-<footer class="site-footer">
+<div class="container">
 
-    <div class="container">
+    <div class="footer-grid">
 
-        <div class="footer-grid">
-
-            <div>
-
-                <div class="footer-brand">فیزیوتراپی ویهان</div>
-
-                <div class="footer-slogan">
-                    تخصص در حرکت، تعهد به درمان
-                </div>
-
-                <p class="footer-text">
-                    همراه شما در مسیر شناخت بهتر حرکت،
-                    سلامت اسکلتی‌عضلانی و توانبخشی مبتنی بر شواهد علمی.
-                </p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>دسترسی سریع</h3>
-
-                <a href="#about">درباره ما</a>
-                <a href="#services">خدمات فیزیوتراپی</a>
-                <a href="#conditions">مشکلات و بیماری‌ها</a>
-                <a href="#methods">روش‌های درمانی</a>
-                <a href="#articles">مجله علمی</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>موضوعات آموزشی</h3>
-
-                <a href="#conditions">دردهای ستون فقرات</a>
-                <a href="#conditions">مشکلات زانو</a>
-                <a href="#conditions">مشکلات شانه</a>
-                <a href="#conditions">آسیب‌های ورزشی</a>
-                <a href="#faq">پرسش‌های متداول</a>
-
-            </div>
-
+        <div>
+            <div class="footer-brand">فیزیوتراپی ویهان</div>
+            <div class="footer-slogan">تخصص در حرکت، تعهد به درمان</div>
+            <p class="footer-text">
+                همراه شما در مسیر شناخت بهتر بدن،
+                سلامت حرکت و توانبخشی مبتنی بر شواهد علمی.
+            </p>
         </div>
 
+        <div class="footer-column">
+            <h3>دسترسی سریع</h3>
+            <a href="#services">خدمات فیزیوتراپی</a>
+            <a href="#conditions">بیماری‌ها و مشکلات</a>
+            <a href="#methods">روش‌های درمانی</a>
+            <a href="#articles">مجله علمی</a>
+        </div>
 
-        <div class="footer-bottom">
-            © تمامی حقوق محتوای این وب‌سایت متعلق به فیزیوتراپی ویهان است.
+        <div class="footer-column">
+            <h3>موضوعات آموزشی</h3>
+            <a href="#conditions">دردهای ستون فقرات</a>
+            <a href="#conditions">مشکلات زانو</a>
+            <a href="#conditions">مشکلات شانه</a>
+            <a href="#faq">پرسش‌های متداول</a>
         </div>
 
     </div>
 
+    <div class="footer-bottom">
+        © تمامی حقوق محتوای این وب‌سایت متعلق به فیزیوتراپی ویهان است.
+    </div>
+
+</div>
 </footer>
 
 
 <script>
 
-    // MOBILE MENU
+// MENU
 
-    const menuButton = document.getElementById("menuButton");
-    const menuPanel = document.getElementById("menuPanel");
+const menuButton = document.getElementById("menuButton");
+const menuPanel = document.getElementById("menuPanel");
 
-    menuButton.addEventListener("click", function () {
+menuButton.addEventListener("click", function() {
+    const opened = menuPanel.classList.toggle("open");
+    menuButton.classList.toggle("active", opened);
+    menuButton.setAttribute("aria-expanded", opened);
+});
 
-        const isOpen = menuPanel.classList.toggle("open");
+menuPanel.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        menuPanel.classList.remove("open");
+        menuButton.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+    });
+});
 
-        menuButton.classList.toggle("active", isOpen);
+document.addEventListener("click", function(event) {
+    if (!menuButton.contains(event.target) &&
+        !menuPanel.contains(event.target)) {
+        menuPanel.classList.remove("open");
+        menuButton.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+    }
+});
 
-        menuButton.setAttribute("aria-expanded", isOpen);
+
+// CONDITION SEARCH
+
+const searchInput = document.getElementById("conditionSearch");
+const conditionCards = document.querySelectorAll(".condition-card");
+const noResults = document.getElementById("noResults");
+
+searchInput.addEventListener("input", function() {
+
+    const query = this.value.trim().toLowerCase();
+    let count = 0;
+
+    conditionCards.forEach(function(card) {
+
+        const text = (
+            card.innerText + " " + card.dataset.search
+        ).toLowerCase();
+
+        const matched = text.includes(query);
+
+        card.style.display = matched ? "block" : "none";
+
+        if (matched) count++;
+    });
+
+    noResults.style.display = count === 0 ? "block" : "none";
+});
+
+
+// FAQ
+
+document.querySelectorAll(".faq-question").forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        const item = this.parentElement;
+        item.classList.toggle("open");
 
     });
 
-
-    // CLOSE MENU AFTER CLICKING A LINK
-
-    menuPanel.querySelectorAll("a").forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            menuPanel.classList.remove("open");
-            menuButton.classList.remove("active");
-            menuButton.setAttribute("aria-expanded", "false");
-
-        });
-
-    });
-
-
-    // CLOSE MENU WHEN CLICKING OUTSIDE
-
-    document.addEventListener("click", function (event) {
-
-        if (
-            !menuButton.contains(event.target) &&
-            !menuPanel.contains(event.target)
-        ) {
-
-            menuPanel.classList.remove("open");
-            menuButton.classList.remove("active");
-            menuButton.setAttribute("aria-expanded", "false");
-
-        }
-
-    });
-
-
-    // CONDITION SEARCH
-
-    const conditionSearch = document.getElementById("conditionSearch");
-    const conditionCards = document.querySelectorAll(".condition-card");
-    const noResults = document.getElementById("noResults");
-
-    conditionSearch.addEventListener("input", function () {
-
-        const query = this.value.trim().toLowerCase();
-
-        let visibleCount = 0;
-
-        conditionCards.forEach(function (card) {
-
-            const searchableText =
-                (card.innerText + " " + card.dataset.search).toLowerCase();
-
-            const matches = searchableText.includes(query);
-
-            card.style.display = matches ? "flex" : "none";
-
-            if (matches) {
-                visibleCount++;
-            }
-
-        });
-
-        noResults.style.display =
-            visibleCount === 0 ? "block" : "none";
-
-    });
-
-
-    // FAQ ACCORDION
-
-    document.querySelectorAll(".faq-question").forEach(function (button) {
-
-        button.addEventListener("click", function () {
-
-            const item = this.parentElement;
-
-            item.classList.toggle("open");
-
-        });
-
-    });
+});
 
 </script>
 
