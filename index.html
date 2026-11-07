@@ -14,6 +14,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+.site-header {
+    background-image:
+        linear-gradient(rgba(16, 47, 53, 0.72), rgba(16, 47, 53, 0.72)),
+        url("InShot_۲۰۲۶۰۸۰۲_۱۸۲۹۰۴۹۰۴.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 25px 7%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.header-overlay {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e0d2b5;
+}
+
+.slogan {
+    font-size: 13px;
+    color: white;
+    margin-top: 5px;
 }
 
 body {
@@ -23,14 +60,7 @@ body {
     line-height: 2;
 }
 
-header {
-    background: #102f35;
-    color: white;
-    padding: 22px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+h
 
 .logo {
     font-size: 23px;
@@ -183,10 +213,16 @@ footer {
 }
 
 @media(max-width:650px) {
-    header {
-        flex-direction: column;
-        gap: 12px;
-    }
+    .site-header {
+    min-height: 160px;
+    padding: 20px 5%;
+}
+
+.header-overlay {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
 
     nav a {
         margin: 0 7px;
@@ -221,23 +257,20 @@ footer {
 </head>
 
 <body>
-
-<header>
-    <div class="brand">
-        <img src="InShot_۲۰۲۶۰۸۰۲_۱۸۲۹۰۴۹۰۴.jpg" alt="لوگوی فیزیوتراپی ویهان">
+<header class="site-header">
+    <div class="header-overlay">
         <div class="brand-text">
             <div class="logo">فیزیوتراپی ویهان</div>
             <div class="slogan">تخصص در حرکت، تعهد به درمان</div>
         </div>
-    </div>
-    
 
-    <nav>
-        <a href="#home">خانه</a>
-        <a href="#services">خدمات</a>
-        <a href="#about">درباره ما</a>
-        <a href="#contact">تماس</a>
-    </nav>
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#services">خدمات</a>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس</a>
+        </nav>
+    </div>
 </header>
 
 <main>
