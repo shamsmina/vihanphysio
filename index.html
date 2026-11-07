@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
 .site-header {
+    position: relative;
     background-image:
         linear-gradient(rgba(16, 47, 53, 0.72), rgba(16, 47, 53, 0.72)),
         url("InShot_۲۰۲۶۱۱۰۷_۱۹۴۵۲۳۲۲۶.jpg");
@@ -97,6 +98,67 @@ nav a {
     text-decoration: none;
     margin-right: 22px;
     font-size: 14px;
+}
+    /* دکمه منوی سه خطی */
+.menu-button {
+    position: absolute;
+    left: 7%;
+    top: 25px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-button span {
+    width: 21px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* پنل بازشونده منو */
+.menu-panel {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 7%;
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.menu-panel.open {
+    display: flex;
+}
+
+.menu-panel a {
+    color: #173c41;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #edf1ee;
+}
+
+.menu-panel a:last-child {
+    border-bottom: none;
+}
+
+.menu-panel a:hover {
+    background: #edf1ee;
+    border-radius: 6px;
 }
 
 .hero {
@@ -265,12 +327,20 @@ footer {
             <div class="slogan">تخصص در حرکت، تعهد به درمان</div>
         </div>
 
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#services">خدمات</a>
-            <a href="#about">درباره ما</a>
-            <a href="#contact">تماس</a>
-        </nav>
+        <button class="menu-button" id="menuButton" aria-label="باز کردن منو" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav class="menu-panel" id="menuPanel">
+    <a href="#home">صفحه اصلی</a>
+    <a href="#about">درباره فیزیوتراپی ویهان</a>
+    <a href="#services">خدمات فیزیوتراپی</a>
+    <a href="#diseases">بیماری‌ها و مشکلات قابل درمان</a>
+    <a href="#articles">مقالات آموزشی</a>
+    <a href="#contact">ارتباط با ما</a>
+</nav>
     </div>
 </header>
 
@@ -390,6 +460,30 @@ footer {
 <footer>
     © تمامی حقوق این وب‌سایت متعلق به فیزیوتراپی ویهان است.
 </footer>
+<script>
+const menuButton = document.getElementById("menuButton");
+const menuPanel = document.getElementById("menuPanel");
 
+menuButton.addEventListener("click", function () {
+    menuPanel.classList.toggle("open");
+
+    const isOpen = menuPanel.classList.contains("open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+});
+
+menuPanel.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        menuPanel.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+    });
+});
+
+document.addEventListener("click", function(event) {
+    if (!menuButton.contains(event.target) && !menuPanel.contains(event.target)) {
+        menuPanel.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+    }
+});
+</script>
 </body>
 </html>
