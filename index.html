@@ -37,6 +37,29 @@ header {
     font-weight: bold;
     color: #d5c5a3;
 }
+    .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan {
+    font-size: 12px;
+    color: #e0d2b5;
+    margin-top: 2px;
+    }
 
 nav a {
     color: white;
@@ -181,6 +204,18 @@ footer {
     section {
         padding: 55px 6%;
     }
+.brand img {
+    width: 60px;
+    height: 60px;
+}
+
+.brand {
+    gap: 10px;
+}
+
+.slogan {
+    font-size: 11px;
+    }
 }
 </style>
 </head>
@@ -188,7 +223,14 @@ footer {
 <body>
 
 <header>
-    <div class="logo">ویهان | فیزیوتراپی</div>
+    <div class="brand">
+        <img src="InShot_۲۰۲۶۰۸۰۲_۱۸۲۹۰۴۹۰۴.jpg" alt="لوگوی فیزیوتراپی ویهان">
+        <div class="brand-text">
+            <div class="logo">فیزیوتراپی ویهان</div>
+            <div class="slogan">تخصص در حرکت، تعهد به درمان</div>
+        </div>
+    </div>
+    
 
     <nav>
         <a href="#home">خانه</a>
