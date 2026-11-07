@@ -336,51 +336,177 @@ img {
 
 /* SERVICES */
 
+/* SERVICES - VIHAN PREMIUM DESIGN */
+
 .services {
+    position: relative;
     background:
-        radial-gradient(circle at 90% 15%, rgba(183,213,141,.25), transparent 25%),
+        radial-gradient(circle at 95% 8%, rgba(183,213,141,.24), transparent 28%),
+        radial-gradient(circle at 5% 90%, rgba(217,238,227,.55), transparent 30%),
         var(--cream);
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 22px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
 }
 
 .service-card {
-    background: white;
-    border-radius: 21px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #fff;
+    border: 1px solid rgba(40,125,105,.10);
+    border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(16,62,61,.06);
-    transition: .3s;
+    box-shadow: 0 10px 32px rgba(16,62,61,.07);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-7px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 20px 42px rgba(16,62,61,.13);
 }
 
-.service-card img {
-    width: 100%;
-    height: 195px;
-    object-fit: cover;
+.service-visual {
+    position: relative;
+    height: 175px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.service-visual::before,
+.service-visual::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 50%;
+}
+
+.service-visual::before {
+    width: 190px;
+    height: 190px;
+    right: -55px;
+    top: -95px;
+}
+
+.service-visual::after {
+    width: 125px;
+    height: 125px;
+    left: -35px;
+    bottom: -65px;
+}
+
+.manual-visual {
+    background: linear-gradient(135deg, #185b54, #65a58a);
+}
+
+.exercise-visual {
+    background: linear-gradient(135deg, #456d70, #a4c7ad);
+}
+
+.movement-visual {
+    background: linear-gradient(135deg, #b18c58, #d9c99d);
+}
+
+.service-symbol {
+    position: relative;
+    z-index: 1;
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.55);
+    border-radius: 50%;
+    background: rgba(255,255,255,.16);
+    color: white;
+    font-size: 43px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.service-visual-label {
+    position: absolute;
+    bottom: 13px;
+    right: 18px;
+    color: rgba(255,255,255,.9);
+    font-size: 10px;
+    letter-spacing: 1px;
+    z-index: 2;
 }
 
 .service-content {
-    padding: 23px;
+    position: relative;
+    flex: 1;
+    padding: 23px 22px 25px;
+    text-align: right;
 }
 
 .service-content h3 {
     color: var(--deep);
     font-size: 17px;
-    margin-bottom: 8px;
+    line-height: 1.9;
+    margin-bottom: 9px;
 }
 
 .service-content p {
     color: var(--muted);
     font-size: 13px;
+    line-height: 2.1;
+    margin: 0;
+    overflow-wrap: break-word;
 }
+
+.service-content::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--gold);
+    margin-bottom: 13px;
+}
+
+@media(max-width:850px) {
+    .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px;
+    }
+}
+
+@media(max-width:560px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .service-card {
+        border-radius: 21px;
+    }
+
+    .service-visual {
+        height: 155px;
+    }
+
+    .service-content {
+        padding: 19px 20px 22px;
+    }
+
+    .service-content h3 {
+        font-size: 16px;
+    }
+
+    .service-content p {
+        font-size: 13px;
+        line-height: 2;
+    }
+    }
 
 /* VISUAL FEATURE */
 
@@ -1130,44 +1256,65 @@ footer {
         </p>
     </div>
 
-    <div class="service-grid">
+    
+<div class="service-grid">
 
-        <article class="service-card">
-            <img loading="lazy"
-            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
-            alt="محیط درمانی و خدمات سلامت">
-            <div class="service-content">
-                <h3>درمان‌های دستی</h3>
-                <p>تکنیک‌های دستی انتخاب‌شده برای بهبود تحرک، عملکرد و مدیریت درد.</p>
-            </div>
-        </article>
+    <article class="service-card">
 
-        <article class="service-card">
-            <img loading="lazy"
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=85"
-            alt="تمرین و فعالیت بدنی">
-            <div class="service-content">
-                <h3>تمرین‌درمانی</h3>
-                <p>تمرین‌های اختصاصی برای افزایش قدرت، تعادل و ظرفیت عملکردی.</p>
-            </div>
-        </article>
+        <div class="service-visual manual-visual">
+            <div class="service-symbol">✧</div>
+            <span class="service-visual-label">MANUAL THERAPY</span>
+        </div>
 
-        <article class="service-card">
-            <img loading="lazy"
-            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=85"
-            alt="تمرین حرکتی و انعطاف‌پذیری">
-            <div class="service-content">
-                <h3>بازآموزی حرکتی</h3>
-                <p>بهبود کنترل حرکتی و بازگشت تدریجی به فعالیت‌های روزمره.</p>
-            </div>
-        </article>
+        <div class="service-content">
+            <h3>درمان‌های دستی</h3>
+            <p>
+                تکنیک‌های دستی انتخاب‌شده برای بهبود تحرک،
+                عملکرد مفاصل و مدیریت درد با توجه به شرایط هر فرد.
+            </p>
+        </div>
 
-    </div>
+    </article>
+
+
+    <article class="service-card">
+
+        <div class="service-visual exercise-visual">
+            <div class="service-symbol">↗</div>
+            <span class="service-visual-label">THERAPEUTIC EXERCISE</span>
+        </div>
+
+        <div class="service-content">
+            <h3>تمرین‌درمانی</h3>
+            <p>
+                تمرین‌های اختصاصی و هدفمند برای افزایش قدرت،
+                تعادل، استقامت و ظرفیت عملکردی بدن.
+            </p>
+        </div>
+
+    </article>
+
+
+    <article class="service-card">
+
+        <div class="service-visual movement-visual">
+            <div class="service-symbol">⌁</div>
+            <span class="service-visual-label">MOVEMENT REHABILITATION</span>
+        </div>
+
+        <div class="service-content">
+            <h3>بازآموزی حرکتی</h3>
+            <p>
+                بهبود کنترل حرکتی، هماهنگی و الگوهای حرکتی
+                برای بازگشت تدریجی به فعالیت‌های روزمره.
+            </p>
+        </div>
+
+    </article>
 
 </div>
+    </div>
 </section>
-
-
 <!-- FEATURE -->
 
 <section class="section feature-section">
